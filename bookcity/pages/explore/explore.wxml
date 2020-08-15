@@ -1,0 +1,45 @@
+<!--pages/explore/explore.wxml-->
+<view class="explore">
+	<view class="nav">
+		<image wx:if='{{flag}}' catchtap="ontap" src="{{src1}}"></image>
+		<image wx:else catchtap="ontap" src="{{src2}}"></image>
+		<image wx:if='{{!flag}}' catchtap="ontaps" src="{{src3}}"></image>
+		<image wx:else catchtap="ontaps" src="{{src4}}"></image>
+	</view>
+	<view wx:if='{{flag}}' class="mian" animation="{{animationData2}}">
+		<navigator url="" class="book">
+			<image src="{{mianimg}}"></image>
+			<view class="the_author">
+				<view class="title">{{title}}</view>
+				<text class="the_author_name">{{the_author_name}}</text>
+			</view>
+		</navigator>
+		<view class="reading">
+			<image wx:key="id" wx:for="{{boss}}" src="{{item.img}}"></image>
+		</view>
+		<view class="the_number_of">457 人已阅读</view>
+		<view class="recommended">
+			<navigator url="" class="referees">
+				<image src="../../image/books_img1.png"></image>
+				<view class="the_name">
+					<text class="">{{the_name}}</text><text>\n</text>
+					<text>{{recommended}}</text>
+				</view>
+			</navigator>
+		</view>
+	</view>
+
+	<!--  -->
+	<view wx:if='{{!flag}}' class="mians">
+		<view class="content">
+			<view wx:key="id" wx:for="{{infor}}">
+				<navigator class="four_layout">
+					<image src="{{item.img}}"></image>
+					<view>{{item.name}}</view>
+				</navigator>
+			</view>
+
+		</view>
+	</view>
+	<view class="foor"></view>
+</view>

@@ -1,0 +1,155 @@
+/* pages/mine/mine.wxss */
+page {
+  background-color: #21272e;
+}
+
+.mine_wrap {
+  padding: 0 47rpx 200rpx 47rpx;
+  
+}
+.set_ico {
+  display: flex;
+}
+
+.set_ico image {
+  width: 38rpx;
+  height: 38rpx;
+  margin-left: auto;
+}
+
+.mine_head {
+  display: flex;
+  padding-bottom: 52rpx;
+}
+
+/* 左边头像 */
+.mine_profile_photo image{
+  width: 246rpx;
+  height: 246rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+  background-size: cover;
+
+}
+
+/* 右边个人信息 */
+.mine_package {
+  flex: 1;
+  padding-left: 32rpx;
+}
+
+.mine_synopsis {
+
+  padding: 34rpx 0;
+  border-bottom: 1px solid #1d2026;
+}
+
+.mine_name {
+  font-size: 36rpx;
+  color: white;
+}
+
+.mine_site {
+  font-size: 32rpx;
+  color: #878995;
+  display: block;
+}
+
+/* 分享按钮 */
+.mine_share_btn {
+  padding-top: 24rpx;
+  display: flex;
+}
+
+.share_btn {
+  padding: 17rpx 44rpx;
+  border-radius: 10rpx;
+  display: inline-block;
+  border: 1px solid #545d66;
+  margin-left: auto;
+}
+
+.mine_share_btn image {
+  width: 28rpx;
+  height: 28rpx;
+  vertical-align: middle;
+}
+
+.mine_share_text {
+  font-size: 30rpx;
+  color: #9497ab;
+  padding-left: 14rpx;
+}
+
+/* 关注部分样式 */
+.mine_content {
+  margin-bottom: 36rpx;
+  border-radius: 30rpx;
+  background-color: #2b323b;
+}
+
+.mine_content .box {
+  padding: 30rpx 0;
+  display: flex;
+
+}
+
+.box .mine_attention {
+  flex: 1;
+  text-align: center;
+  border-right: 1px solid #363c45;
+
+}
+
+.mine_wrap .mine_content .mine_attention:last-child {
+  border: 0;
+}
+
+.mine_content .number {
+  color: white;
+}
+
+.mine_content .text {
+  display: block;
+  color: #9497ab;
+}
+
+/* 操作列表部分  */
+.mine_list {
+  display: flex;
+  justify-content: space-between;
+  padding: 54rpx 0;
+  border-bottom: 1px solid #363c45;
+
+}
+
+.mine_list .mine_list_left {
+  color: #dcdeea;
+}
+
+
+.mine_list_right image {
+  width: 30rpx;
+  height: 30rpx;
+  vertical-align: middle;
+}
+
+.mine_list_right .mine_list_balance {
+  color: #fb6894;
+  vertical-align: middle;
+  padding-right: 10rpx;
+}
+
+.mine_list:nth-child(2) {
+  padding-bottom: 0;
+}
+
+.mine_list:nth-child(2) .mine_list_news {
+  border-radius: 200rpx;
+  background-color: #fb6894;
+  color: white;
+  width: 48rpx;
+  height: 48rpx;
+  text-align: center;
+
+}

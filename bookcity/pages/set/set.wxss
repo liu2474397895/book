@@ -1,0 +1,84 @@
+/* 操作列表部分  */
+page {
+  background-color: #21272e;
+
+}
+
+.set_wrap {
+  padding: 0 47rpx;
+}
+
+.mine_list {
+  display: flex;
+  justify-content: space-between;
+  padding: 54rpx 0;
+}
+
+.mine_list .mine_list_left {
+  color: #dcdeea;
+}
+
+.mine_list_right image {
+  width: 30rpx;
+  height: 30rpx;
+  vertical-align: middle;
+}
+
+.mine_list:nth-child(3) {
+  padding-bottom: 0;
+}
+
+.mine_list:nth-child(3) .mine_list_status {
+  width: 106rpx;
+  height: 64rpx;
+  border-radius: 100rpx;
+  background: rgb(249, 206, 206);
+  box-sizing: border-box;
+  display: flex;
+}
+
+.mine_list:nth-child(3) .status_btn {
+  width: 64rpx;
+  height: 64rpx;
+  border-radius: 200rpx;
+  background-color: rgb(233, 233, 233);
+  vertical-align: middle;
+}
+
+.mine_list:nth-child(3) .rotate {
+  margin-left: auto;
+  animation: silde 1s;
+  background-color: white;
+
+}
+
+.mine_list:nth-child(3) .status_bcg {
+  background-color: #fb6894;
+}
+
+
+
+
+.mine_list:nth-child(4) .mine_list_balance {
+  color: #dcdeea;
+  vertical-align: middle;
+  padding-right: 10rpx;
+  display: inline-block;
+}
+
+.mine_list:nth-child(4) .mine_list_right {
+  display: flex;
+}
+
+.mine_list:nth-child(4) .mine_list_right image {
+  margin-top: 10rpx;
+
+}
+
+.set_btn {
+  width: 100%;
+  background-color: #2e363f;
+  color: #dcdeea;
+  border-radius: 0;
+  margin-top: 132rpx
+}

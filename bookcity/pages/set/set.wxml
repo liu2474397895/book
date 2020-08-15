@@ -1,0 +1,75 @@
+<!-- 操作列表部分 -->
+<view class="set_wrap">
+
+<navigator class="mine_list" wx:for="{{list}}">
+		<view class="mine_list_left">
+			<text>{{item.title}}</text>
+		</view>
+		<view class="mine_list_right">
+			<text class="mine_list_balance">{{item.text}}</text>
+			<view class="mine_list_status {{status_bcg}}" data-sd="{{bcg}}"  catchtap="siled_bcg" >
+		
+				<view class='status_btn {{rotate}}' bindtap="siled_btn" data-sd="{{an}}"></view></view>
+			<image src="{{item.ico}}"></image>
+		</view>
+
+	</navigator>
+	<!-- 查看账户 
+	<navigator class="mine_list">
+		<view class="mine_list_left">
+			<text>个人资料</text>
+		</view>
+		<view class="mine_list_right">
+			<image src="/image/my_upPage_icon.png"></image>
+		</view>
+
+	</navigator>
+
+	<view class="mine_list">
+		<view class="mine_list_left">
+			<text>消息提醒</text>
+		</view>
+		<view class="mine_list_right">
+			<view class="mine_list_status {{status_bcg}}" data-sd="{{bcg}}"  catchtap="siled_bcg" >
+				<view class='status_btn {{rotate}}' bindtap="siled_btn" data-sd="{{an}}"></view>
+			</view>
+		</view>
+	</view>
+
+
+
+<navigator class="mine_list">
+	<view class="mine_list_left">
+		<text>清理缓存</text>
+	</view>
+	<view class="mine_list_right">
+		<text class="mine_list_balance">128MB</text>
+		<image src="/image/my_upPage_icon.png"></image>
+	</view>
+
+</navigator>
+
+<navigator class="mine_list">
+	<view class="mine_list_left">
+		<text>帮助中心</text>
+	</view>
+	<view class="mine_list_right">
+		<image src="/image/my_upPage_icon.png"></image>
+	</view>
+
+</navigator>
+
+<navigator class="mine_list">
+	<view class="mine_list_left">
+		<text>关于我们</text>
+	</view>
+	<view class="mine_list_right">
+		<image src="/image/my_upPage_icon.png"></image>
+	</view>
+
+</navigator> -->
+
+</view>
+<button class="set_btn">
+	退出登录
+</button>

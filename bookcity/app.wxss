@@ -1,0 +1,26 @@
+.custom{
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 45px;
+  background: #9ec7f5;
+  z-index: 999;
+}
+.custom text{
+  color: #fff;
+  font-size: 34rpx;
+  font-weight: 500;
+  max-width: 280rpx;
+}
+.empty_custom{
+  height: 70px;
+  width: 100%;
+}
+page{
+  background-color: #21272e;
+}
+.content{
+  padding: 0rpx 50rpx;
+}
+

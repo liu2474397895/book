@@ -1,0 +1,53 @@
+<view class="mine_wrap">
+		<navigator class="set_ico" url="/pages/set/set">
+		<image src="/image/my_set_icon.png"></image>
+		</navigator>
+	<!-- 我的页面头部 -->
+	<view class="mine_head">
+		<!-- <view class="mine_profile_photo" >
+			<image src="/image/my_head.png"></image>
+		</view> -->
+		  <view class="mine_profile_photo" bindtap="onGetUserInfo">
+				<image src="../../image/my_head.png"></image>
+			</view>
+		
+		<view class="mine_package">
+			<view class="mine_synopsis">
+				<text class="mine_name">李雪玲</text>
+				<text class="mine_site">中国·襄阳</text>
+			</view>
+			<view class="mine_share_btn">
+				<view class="share_btn">
+					<image src="/image/my_share_icon.png"></image>
+					<text class="mine_share_text">分享</text>
+				</view>
+			</view>
+		</view>
+	</view>
+
+	<!-- 关注部分 -->
+	<view class="mine_content">
+		<view class="box">
+			<view class="mine_attention" wx:for="{{arr}}">
+				<text class="number">{{item.number}}</text>
+				<text class="text">{{item.text}}</text>
+			</view>
+		</view>
+	</view>
+
+	<!-- 操作列表部分 -->
+	<view class="mine_operation">
+		<navigator class="mine_list" wx:for="{{list}}" url="{{item.url}}">
+			<view class="mine_list_left">
+				<text>{{item.title}}</text>
+			</view>
+			<view class="mine_list_right">
+				<view class="mine_list_news">{{item.news}}</view>
+				<text class="mine_list_balance">{{item.balance}}</text>
+				<image src="{{item.ico}}"></image>
+			</view>
+
+		</navigator>
+
+	</view>
+</view>

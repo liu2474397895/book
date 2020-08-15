@@ -1,0 +1,169 @@
+/* pages/topup/topup.wxss */
+page {
+  background-color: #21272E;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.top_up {
+  background-color: #2B323B;
+  margin: 0rpx 50rpx;
+  padding-top: 50rpx;
+  padding-left: 35rpx;
+  border-radius: 25rpx;
+}
+
+.top_up .top_up_text {
+  color: #75808D;
+  font-size: 40rpx;
+  margin-bottom: 20rpx;
+  letter-spacing: 2rpx;
+}
+
+.top_up .pay_form {
+  position: relative;
+}
+
+.top_up .pay_form .money {
+  position: absolute;
+  color: white;
+  font-size: 120rpx;
+  top: -13rpx;
+  left: -25rpx;
+}
+/* .inputBottom{
+  height: 130rpx;
+} */
+.top_up .top_up_input {
+  padding-bottom: 30rpx;
+  border-bottom: 2rpx solid #3B4551;
+  width: 465rpx;
+  color: white;
+  padding-left: 75rpx;
+  font-size: 120rpx;
+  height: 130rpx;
+  margin-bottom: 50rpx
+}
+
+.next_step {
+  height: 140rpx;
+  background-color: #2B323B;
+  text-align: center;
+  line-height: 140rpx;
+  color: white;
+  font-size: 36rpx;
+  margin-bottom: 35rpx;
+}
+
+
+/*  */
+.pay{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  position: absolute;
+  display: flex;
+
+}
+.pay_bottom{
+  background-color: #2B323B;
+  padding-left: 50rpx;
+  position: relative;
+  padding-top: 100rpx;
+  align-self:flex-end;
+  width: 100%;
+  z-index: 999;
+  
+}
+.pay_bottom .cancel{
+  width: 50rpx;
+  height: 50rpx;
+  background-color: rgb(13,16,18);
+  border-radius: 50%;
+  color: white;
+  text-align: center;
+  line-height: 46rpx;
+  font-size: 40rpx;
+  position: absolute;
+  right: 45rpx;
+  top:45rpx;
+}
+.pay_bottom .pay_bottom_title{
+  color: #75808D;
+  font-size: 40rpx;
+  margin-bottom: 20rpx;
+  letter-spacing: 2rpx;
+}
+.pay_bottom .pay_bottom_money{
+  font-size: 120rpx;
+  color: white;
+}
+.pay_bottom .pay_bottom_content{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 40rpx;
+  padding-bottom: 40rpx;
+  border-bottom: 2rpx solid #3B4551;
+}
+.pay_bottom .pay_bottom_content text:first-child{
+  color: rgb(192,195,214);
+  font-size: 35rpx;
+  letter-spacing: 2rpx;
+}
+.pay_bottom .pay_bottom_content text:last-child{
+  color: #75808D;
+  font-size: 30rpx;
+  letter-spacing: 2rpx;
+  padding-right: 40rpx;
+}
+.pay_way{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50rpx 0rpx;
+  border-bottom: 2rpx solid #3B4551;
+}
+.pay_way .pay_way_write{
+  color: rgb(192,195,214);
+  font-size: 35rpx;
+  letter-spacing: 2rpx;
+}
+.bank_card{
+  display: flex;
+  align-items: center;
+  padding-right: 40rpx;
+}
+.bank_card .bank_card_text{
+  color: #75808D;
+  font-size: 30rpx;
+  letter-spacing: 2rpx;
+}
+.bank_card .bank_card_img{
+  width: 30rpx;
+  height: 35rpx;
+  position: relative;
+  top:5rpx;
+}
+
+.payment_method{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60rpx 6rpx;
+}
+.payment_method .fingerprint{
+  width: 80rpx;
+  height: 80rpx;
+}
+.payment_method .payment_method_text{
+  color: #75808D;
+  font-size: 36rpx;
+  padding: 0rpx 10rpx;
+}
+.payment_method .enter_password{
+  color: #FF1D8D;
+  font-size: 36rpx;
+}

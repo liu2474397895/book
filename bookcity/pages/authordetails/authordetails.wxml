@@ -1,0 +1,50 @@
+
+<view class="content">
+  <view class="information">
+    <view class="information_left">
+      <image src="{{image}}"></image>
+    </view>
+    <view class="information_right">
+    <view class="personal">
+      <view class="name">{{text}}</view>
+      <view class="address">中国·保康</view>
+    </view>
+      <view class="btn">
+        <image src="../../image/icon_1.jpg" class="icon_one"></image>
+       <button class="mini-btn  share" type="primary" size="mini">分享</button>
+      <button class="mini-btn share_two" type="default" size="mini">+关注</button>
+      </view>
+      
+    </view>
+  </view>
+  <view class="like">
+    <view class="like_left" wx:for="{{datas}}" wx:key="{{index}}">
+      <view class="number">{{item.number}}</view>
+      <view class="text">{{item.text}}</view>
+    </view>
+  </view>
+  <view class="representative_work">
+    <view class="representative_work_two">
+       <view class="ranking">
+        <view class="ranking-left">代表作</view>
+        <view class="ranking-right"> 总共 {{num}}本书</view>
+      </view>
+    </view>
+    <view class="representative_work_bottom" wx:for="{{list}}" wx:key="{{inde}}">
+      <view class="bottom_left">
+        <image src="{{item.image}}"></image>
+      </view>
+      <view class="bottom_right">
+        <view class="book_name">{{item.book_name}}</view>
+        <view>
+        <view class="margin">
+          <image src="{{item.stars}}" class="stars"></image>
+          <text class="score">{{item.score}}</text>
+        </view>
+          <view class="introduce">{{item.introduce}}</view>
+        </view>
+        <view class="readingvolume">{{item. readingvolume}} 人阅读</view>
+      </view>
+    </view>
+  </view>
+</view>

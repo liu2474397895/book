@@ -1,0 +1,11 @@
+<!--pages/accountbalance/accountbalance.wxml-->
+<!-- 账户余额 -->
+<view class="balance">
+<view class="banlance_text">我的余额(元)</view>
+<view class="banlance_num">1375.00</view>
+</view>
+<navigator url="../topup/topup">
+<view class="top_up">
+充值
+</view>
+</navigator>

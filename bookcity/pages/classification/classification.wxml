@@ -1,0 +1,99 @@
+<view class="main" hover-class="none">
+	<!-- // input部分 -->
+	<view class="search">
+		<input class="search_input" placeholder="搜索..." catchfocus="inp_focus" bindblur="" bindconfirm="getRecth" /> <text class="" bindtap="inp_focusx">取消</text>
+		<image class="icon1 magnifier" mode="aspectFit|aspectFill|widthFix" src="../../image/icon/magnifier.png" bindload="" />
+	</view>
+
+	<view hidden="{{one}}">
+		<!-- 热门搜索 -->
+		<view class="search_hot">
+			<text class="" selectable="false" space="false" decode="false"> 热门搜索
+    </text>
+			<navigator class="search_hot_all" target="" >
+				查看全部 >
+			</navigator>
+
+
+		</view>
+		<!-- 书籍 -->
+		<view class="search_hot_books" hover-class="none">
+			<navigator url="" wx:for="{{list4}}" vx:for-item="item" wx:key="id">
+
+				<image class="" src="{{item.src}}" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
+				<view class="">{{item.font}}</view>
+				<text class="">{{item.fonts}}</text>
+
+			</navigator>
+
+		</view>
+		<!-- 搜索记录 -->
+		<view class="search_hot hot_record">
+			<text class="" selectable="false" space="false" decode="false"> 搜索历史
+    </text>
+			<image class="" src="../../image/icon/delete.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" bindtap="delete" />
+		</view>
+		<view class="record" id="record">
+			<block wx:for="{{arr}}" vx:for-item="item" wx:key="id">
+				<view>{{item}}</view>
+			</block>
+		</view>
+
+
+	</view>
+	<!-- <view class="search">
+		<input class="search_input" placeholder="搜索..." /> <text class="">取消</text>
+		<image class="icon1 magnifier" mode="aspectFit|aspectFill|widthFix" src="../image/icon/magnifier.png" bindload="" />
+	</view> -->
+	<view hidden="{{two}}">
+		<scroll-view class="" scroll-x="true">
+			<view class="mainbav">
+				<view class=' {{isSelect==item.id? " cur": "mainbav_border"}}' data-id="{{item.id}}" bindtap="select" wx:for="{{classification}}" wx:for-item="item" wx:key="id">
+					{{item.szie}}
+				</view>
+
+			</view>
+
+		</scroll-view>
+		<!-- 新上架 -->
+		<view class="search_hot classification_search">
+			<text class="" selectable="false" space="false" decode="false">新上架 </text>
+			<navigator class="search_hot_all" target="" url="../science/science">
+				查看全部 >
+			</navigator>
+		</view>
+		<!-- 书籍 -->
+		<view class="search_hot_books classification_books" hidden="{{all}}" hover-class="none">
+
+			<navigator class="" wx:for="{{list}}" vx:for-items="item" wx:key="id">
+				<image class="" src="{{item.src}}" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
+				<view class="">{{item.font}}</view>
+				<text class="">{{item.fonts}}</text>
+			</navigator>
+		</view>
+		<!-- 书籍 -->
+		<view class="search_hot_books classification_books" hidden="{{Workplace}}" hover-class="none">
+			<view class="" wx:for="{{list3}}" vx:for-item="item" wx:key="id">
+				<image class="" src="{{item.src}}" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
+				<view class="">{{item.font}}</view>
+				<text class="">{{item.fonts}}</text>
+			</view>
+		</view>
+		<!-- 热门搜索 -->
+		<view class="search_hot classification_search">
+			<text class="" selectable="false" space="false" decode="false"> 热门</text>
+			<navigator class="search_hot_all" target="" url="">
+				查看全部 >
+			</navigator>
+		</view>
+		<!-- 书籍 -->
+		<view class="search_hot_books classification_books" hover-class="none">
+			<navigator class="" wx:for="{{list2}}" vx:for-itema="item" wx:key="id">
+				<image class="" src="{{item.src}}" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
+				<view class="">{{item.font}}</view>
+				<text class="">{{item.fonts}}</text>
+			</navigator>
+		</view>
+	</view>
+
+</view>

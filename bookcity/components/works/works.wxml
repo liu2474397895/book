@@ -1,0 +1,5 @@
+<view class="works_img">
+    <image class="img" src="{{worksList.url}}" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
+</view>
+<view class="works_title">{{worksList.title}}</view>
+<view class="works_author">{{worksList.author}}</view>

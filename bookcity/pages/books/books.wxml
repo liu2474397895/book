@@ -1,0 +1,124 @@
+<!-- 书架 -->
+<!-- 书籍 -->
+<view class="book flex">
+    <view class="books_img">
+        <image class="book_img" src="../../image/books_img1.png" />
+    </view>
+    <view class="books_word">
+        <view class="book_title">三体：死神永生</view>
+        <view class="book_author">作者：刘慈欣</view>
+        <view class="book_introduce">《三体3：死神永生》是刘慈欣创作的系列长篇科幻小说三体三部曲的第三部作品，该部作品于2010年11月首次出版。</view>
+        <view class="book_evaluate">
+            <view class="stare flex">
+                <image class="icon" src="../../image/stars_ok.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
+                <image class="icon" src="../../image/stars_ok.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
+                <image class="icon" src="../../image/stars_ok.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
+                <image class="icon" src="../../image/stars_ok.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
+                <image class="icon" src="../../image/stars_ok.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
+            </view>
+            <view class="score">5.0</view>
+        </view>
+    </view>
+</view>
+<!-- 功能 -->
+<view class="function flex">
+    <view class="like flex">
+        <image class="icon" src="../../image/heart_icon_.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="图片加载失败" bindload="" />
+        <text class="" selectable="false" space="false" decode="false">收藏</text>
+    </view>
+    <view bindtap="shareOnClick" class="share flex">
+        <image class="icon" src="../../image/share_icon.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="图片加载失败" bindload="" />
+        <text class="" selectable="false" space="false" decode="false">分享</text>
+    </view>
+    <view bindtap="addOnClick" class="add_books flex">
+        <image class="icon" src="{{addIcon}}" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="图片加载失败" bindload="" />
+        <text class="" selectable="false" space="false" decode="false">{{addBooks}}</text>
+    </view>
+</view>
+<!-- 作品简介 -->
+<view class="introduction">
+    <view class="introduction_title">详情</view>
+    <view class="introduction_text">
+        该书主要讲述了文革期间一次偶然的星际通讯引发的三体世界对地球的入侵以及之后人类文明与三体文明三百多年的恩怨情仇。
+        《三体3：死神永生》通过细节的描写为我们生动呈现了在失根状态下的漂泊流浪之中，人类个体与集体的无助、人性灰暗与压抑面的异化表现、困境之中的惊恐癫狂还有归属感缺失的愤怒与不安。
+    </view>
+</view>
+<!-- 查看目录 -->
+<view class="catalog flex">
+    <view class="catalog_title">查看目录</view>
+    <image class="catalog_icon" src="../../image/down_icon.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
+</view>
+<!-- 评论 -->
+<view class="comment">
+    <view class="comment_top flex">
+        <view class="comment_title">评论</view>
+        <view class="comment_number">215 条评论</view>
+        <image class="catalog_icon" src="../../image/edit.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
+    </view>
+    <view class="comment_content">
+        <view class="comment_content_main">
+            <view class="user_img">
+                <image class="" src="http://image.imgtn.bdimg.com/it/u=1408233282,1483083519&fm=26&gp=0.jpg" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
+            </view>
+            <view class="user_main">
+                <view class="user_name">你个废物</view>
+                <view class="user_comment">
+                    大刘塑造的女性都具有明显的圣母特质，但是本质上弱爆了。叶是文革的毒瘤，庄是定制禁脔，程最经典一站在圣 母和傻逼的微笑曲线上。大刘塑造的男性都带有明显的缺陷但本质上极端人性化。一身痞气的小人物大史，最高情商让他活得最明白;罗辑的荒唐和不羁让他成了救世主，但也决定了他必不能善终;软弱怯懦固执的云天明，也并无理由因为慷慨和运气就得到爱啊。但我真。理解这样的人，这样的性格，这样的命运。
+                </view>
+            </view>
+        </view>
+        <view class="comment_content_date flex">
+            <view class="time flex">
+                <text class="" selectable="false" space="false" decode="false">12-04</text>
+                <text class="" selectable="false" space="false" decode="false">21:22</text>
+            </view>
+            <view class="data flex">
+                <view class="data_like flex">
+                    <image class="" src="../../image/heart_icon.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
+                    <text class="" selectable="false" space="false" decode="false">134</text>
+                </view>
+                <view class="data_comment flex">
+                    <image class="" src="../../image/chat_icon.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
+                    <text class="" selectable="false" space="false" decode="false">898</text>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>
+<!-- 按钮区域 -->
+<view class="fun_btn flex">
+<navigator url="../shoppingcart/shoppingcart">
+    <view class="try_btn">
+        <button class="btn">购物车</button>
+    </view>
+    </navigator>
+    <navigator url="../reading/reading">
+    <view class="purchase_btn">
+        <button class="btn">免费试读</button>
+    </view>
+    </navigator>
+</view>
+<!-- 加入书架弹窗提示 -->
+<view wx:if="{{isShow === 1}}" class="smectite">
+    <view class="popup">
+        <view class="book_img">
+            <image class="books_img" src="../../image/books_img1.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
+        </view>
+        <view class="tips_text">已将这本书加入个人书架</view>
+        <view bindtap="addIsHide" class="ok_btn">
+            <button>好的</button>
+        </view>
+    </view>
+</view>
+<!-- 分享弹窗 -->
+<view wx:if="{{shareIsShow === 1}}" class="share_popup flex">
+    <view wx:for="{{logoList}}" wx:key="index" class="share_logo">
+        <image class="logo" src="{{item.url}}" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
+    </view>
+    <view bindtap="shareIsHide" class="cancel">
+        <view class="cancel_icon">
+            <image class="icon" src="../../image/cancel_icon.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
+        </view>
+    </view>
+      
+</view>

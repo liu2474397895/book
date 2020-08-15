@@ -1,0 +1,43 @@
+<!--pages/topup/topup.wxml-->
+<!-- 充值 -->
+<!-- <view class="top" wx:if="{{is_show===0}}"> -->
+<view class="top_up">
+	<view class="top_up_text">充值余额(元)</view>
+	<form class="pay_form">
+		<text class="money">￥</text>
+		<!-- <view class='inputBottom'> -->
+		<input class="top_up_input" type="number" bindinput="updateValue" data-name="sum" value="{{sum}}"></input>
+		<!-- bindfocus="foucus" bindblur="blur" cursor-spacing="{{xxx}}" -->
+		<!-- </view> -->
+	</form>
+</view>
+<view class="next_step" bindtap="next_step">
+	下一步
+</view>
+<!-- <view> -->
+<view class="pay" wx:if="{{is_show===1}}">
+	<view class="pay_bottom">
+		<view class="cancel" bindtap="cancel">
+			x
+		</view>
+		<view class="pay_bottom_title">确认付款(元)</view>
+		<view class="pay_bottom_money">{{money}}</view>
+		<view class="pay_bottom_content">
+			<text >订单信息</text>
+			<text >充值</text>
+		</view>
+		<view class="pay_way">
+			<text class="pay_way_write">付款方式</text>
+			<view class="bank_card">
+				<text class="bank_card_text">中国银行卡(0288)</text>
+				<image class="bank_card_img" src="../../image/right.png"></image>
+			</view>
+		</view>
+
+		<view class="payment_method">
+			<image class="fingerprint" src="../../image/fingerprint.png"></image>
+			<text class="payment_method_text">指纹验证或者</text>
+			<view class="enter_password">输入密码</view>
+		</view>
+	</view>
+</view>

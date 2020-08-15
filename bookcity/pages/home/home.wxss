@@ -1,0 +1,159 @@
+/* pages/home/home.wxss */
+
+.search{
+  position: relative;
+}
+.search .search_border{
+  width: 100%;
+  height: 100rpx;
+  background-color: #2d353d;
+  border-radius: 50rpx;
+}
+
+icon{
+  position: absolute;
+  top: 28rpx;
+  left: 30rpx;
+}
+.top{
+  margin-top: 57rpx;
+}
+.ranking{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50rpx;
+}
+.ranking-left{
+  color: #ffffff;
+  font-size: 36rpx;
+}
+.ranking-right{
+  color: #a2a8ba;
+  font-size: 32rpx;
+}
+.classification_item{
+  
+  margin-right: 30rpx;
+}
+.classification_item image{
+  width: 160rpx;
+  height: 160rpx;
+}
+.bottom{
+  display: flex;
+  border-bottom: 1px solid #2f343c;
+  padding-bottom: 55rpx;
+}
+.bottom .text{
+  color: #fff;
+  margin-top: 20rpx;
+  padding-bottom: 10rpx;
+  font-size: 28rpx;
+}
+.classification_item .new {
+  width: 200rpx;
+  height: 245rpx;
+}
+page{
+  background-color: #21272e;
+}
+
+ .search {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  color: #8d92a5;
+  padding-bottom: 65rpx;
+}
+ .search .icon1 {
+  width: 46rpx;
+  height: 46rpx;
+}
+ .search .magnifier {
+  position: absolute;
+  top: 30rpx;
+  left: 30rpx;
+}
+ .search .search_input {
+  width: 510rpx;
+  height: 97rpx;
+  background-color: #2d353d;
+  padding-left: 90rpx;
+  border-radius: 50rpx;
+}
+.search_hot {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  padding-bottom: 35rpx;
+}
+.search_hot image {
+  width: 40rpx;
+  height: 40rpx;
+}
+.search_hot .search_hot_all {
+  color: #8d92a5;
+  font-size: 25rpx;
+}
+.hiddn{
+  width: 70rpx;
+  margin-left: 20rpx;
+}
+.search_hot_books {
+  display: flex;
+  justify-content: space-between;
+  color: #8d92a5;
+  border-bottom: 1rpx solid #252930;
+  padding-bottom: 30rpx;
+}
+.search_hot_books image {
+  width: 194rpx;
+  height: 279rpx;
+  margin-bottom: 30rpx;
+}
+.search_hot_books view {
+  color: white;
+}
+.search_hot_books text {
+  color: #8d92a5;
+  font-size: 24rpx;
+}
+.mainbav {
+  width: 140vw;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1rpx solid #252930;
+}
+.mainbav view {
+  width: 130rpx;
+  color: white;
+  padding-bottom: 30rpx;
+  text-align: center;
+}
+.mainbav .mainbav_border {
+  border-bottom: 0rpx solid #fb6894;
+}
+.mainbav .cur {
+  border-bottom: 4rpx solid #fb6894;
+}
+.classification_search {
+  margin-top: 65rpx;
+}
+.classification_books {
+  padding-bottom: 80rpx;
+}
+ .record {
+  display: flex;
+  flex-wrap: wrap;
+}
+ .record view {
+  color: white;
+  background-color: #45485b;
+  padding: 15rpx 40rpx ;
+  margin-right: 20rpx;
+  font-size: 25rpx;
+  border-radius: 40rpx;
+  margin-bottom: 10rpx;
+}

@@ -1,0 +1,26 @@
+<view class="reading">
+    <view class="reading_title flex">
+        <view class="reading_title_text">正在阅读</view>
+        <view class="reading_title_down">查看全部 ></view>
+    </view>
+    <view class="reading_main flex">
+        <view wx:for="{{worksList}}" wx:key="index" class="reading_main_list">
+            <navigator class="" target="" url="/pages/books/books" hover-class="navigator-hover" open-type="navigate">
+                <works works-list="{{item}}"></works>
+            </navigator>
+        </view>
+    </view>
+</view>
+<view class="reading not_read">
+    <view class="not_read_title flex">
+        <view class="not_read_text">未读</view>
+        <view class="rnot_read_down">查看全部 ></view>
+    </view>
+    <view class="reading_main flex">
+        <view wx:for="{{notRead}}" wx:key="index" class="reading_main_list">
+            <navigator class="" target="" url="/pages/books/books" hover-class="navigator-hover" open-type="navigate">
+            <works works-list="{{item}}"></works>
+            </navigator>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,106 @@
+
+<view class="content">
+	<view class="ranking_list">
+		<view class="list_one">
+			<navigator url="../authordetails/authordetails?image={{item.image}}&text={{item.text}}">
+				<image src="../../image/author_4.jpg"></image>
+				<view class="text_name">{{name_one}}</view>
+				<view class="text_fans">{{fans_one}} 粉丝</view>
+			</navigator>
+		</view>
+		<view class="list_two">
+    <navigator url="../authordetails/authordetails?image={{item.image}}&text={{item.text}}">
+			<image src="../../image/author_5.jpg"></image>
+			<view class="text_name">{{name_two}}</view>
+			<view class="text_fans">{{fans_two}} 粉丝</view>
+      </navigator>
+		</view>
+		
+		<view class="list_three">
+    <navigator url="../authordetails/authordetails?image={{item.image}}&text={{item.text}}">
+			<image src="../../image/author_6.jpg"></image>
+			<view class="text_name">{{name_three}}</view>
+			<view class="text_fans">{{fans_three}} 粉丝</view>
+      </navigator>
+		</view>
+    
+	</view>
+	<view class="classification">
+		<view class="top">
+			<view class="ranking">
+				<view class="ranking-left">热门作者</view>
+				<view class="ranking-right">查看全部 ></view>
+			</view>
+		</view>
+		<scroll-view scroll-x>
+			<view class="bottom">
+
+				<view class="classification_item" wx:for="{{list}}" wx:key="{{index}}">
+					<navigator url="../authordetails/authordetails?image={{item.image}}&text={{item.text}}">
+						<image src="{{item.image}}"></image>
+						<view class="text">{{item.text}}</view>
+						</navigator>
+						<view class="border active"   data-index="{{index}}"  hidden="{{index==showview?!one:one}}" bindtap="show">{{item.nofollow}}</view>
+						<view class="border" bindtap="chooseAddBookrack"  hidden="{{index==showview?one:!one}}" bindtap="show">{{item.follow}}</view>
+					
+				</view>
+
+
+			</view>
+		</scroll-view>
+
+
+	</view>
+	<view class="classification">
+		<view class="top">
+			<view class="ranking">
+				<view class="ranking-left">热门作者</view>
+				<view class="ranking-right">查看全部 ></view>
+			</view>
+		</view>
+		<scroll-view scroll-x>
+			<view class="bottom">
+
+				<view class="classification_item" wx:for="{{datas}}" wx:key="{{index}}">
+					<navigator url="../authordetails/authordetails?image={{item.image}}&text={{item.text}}">
+						<image src="{{item.image}}"></image>
+						<view class="text">{{item.text}}</view>
+						</navigator>
+							<view class="border active"   data-index="{{index}}"  hidden="{{index==showviewtwo?!two:two}}" bindtap="showtwo">{{item.nofollow}}</view>
+						<view class="border"  hidden="{{index==showviewtwo?two:!two}}" bindtap="show">{{item.follow}}</view>
+					
+				</view>
+
+
+			</view>
+		</scroll-view>
+
+
+	</view>
+	<view class="classification">
+		<view class="top">
+			<view class="ranking">
+				<view class="ranking-left">其他作者</view>
+				<view class="ranking-right">查看全部 ></view>
+			</view>
+		</view>
+		<scroll-view scroll-x>
+			<view class="bottom">
+
+				<view class="classification_item" wx:for="{{datas}}" wx:key="{{index}}">
+					<navigator url="../authordetails/authordetails?image={{item.image}}&text={{item.text}}">
+						<image src="{{item.image}}"></image>
+						<view class="text">{{item.text}}</view>
+							</navigator>
+						<view class="border active"   data-index="{{index}}"  hidden="{{index==showviewthree?!three:three}}" bindtap="showthree">{{item.nofollow}}</view>
+						<view class="border"  hidden="{{index==showviewthree?three:!three}}" bindtap="show">{{item.follow}}</view>
+				
+				</view>
+
+
+			</view>
+		</scroll-view>
+
+
+	</view>
+</view>

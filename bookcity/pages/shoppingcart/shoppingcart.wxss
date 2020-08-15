@@ -1,0 +1,115 @@
+/* pages/shoppingcart/shoppingcart.wxss */
+page{
+  background-color: #21272E;
+  position: relative;
+}
+/* .shoping:last-child{
+  padding-bottom: 180rpx;
+} */
+.shop{
+  /* padding-bottom: 180rpx; */
+  /* height: 1200rpx; */
+  height: 900rpx;
+}
+::-webkit-scrollbar{
+  width: 0;
+  height: 0;
+  color: transparent;
+  }
+.shoping .shoping_list{
+  background-color: #2B323B;
+  display: flex;
+  margin: 0rpx 48rpx;
+  margin-top: 90rpx;
+  border-radius: 25rpx;
+}
+.shoping .shoping_list .shoping_list_img{
+  position: relative;
+  width: 170rpx;
+  height: 250rpx;
+  margin-left: 33rpx;
+  margin-right: 27rpx;
+  top: -33rpx;
+  z-index: 99;
+}
+.shoping_introduce{
+ padding-right: 25rpx;
+}
+.shoping_introduce .book_name{
+  font-size: 32rpx;
+  color: white;
+  padding-top: 25rpx;
+  padding-bottom: 10rpx;
+}
+.shoping_introduce .author {
+  padding-bottom: 15rpx;
+  width: 330rpx;
+  border-bottom: 1rpx solid #323943;
+}
+.shoping_introduce .author .author_text{
+  font-size: 28rpx;
+  color: #4B5164;
+  padding-right: 10rpx;
+}
+.shoping_introduce .author .author_name{
+  font-size: 28rpx;
+  color: #4B5164;
+}
+.shoping_introduce .price{
+  padding-top: 20rpx;
+}
+.shoping_introduce .price .price_text,.price_num{
+  font-size: 40rpx;
+  color: #FF1D8D;
+}
+.three_points{
+  color: #969BAF;
+  font-size: 50rpx;
+}
+
+/* 购物 */
+.buy{
+/* margin-bottom: 35rpx; */
+margin-top: 70rpx;
+}
+.buy_content{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin:0rpx 45rpx;
+}
+.buy_content .tota .tota_text{
+  color: white;
+  font-size: 28rpx;
+  /* padding-right: 15prx; */
+}
+.buy_content .tota .tota_num{
+  color: #FF1D8D;
+  font-size: 28rpx;
+}
+.buy_content .balance .balance_text{
+  color: white;
+  font-size: 28rpx;
+  /* padding-right: 15prx; */
+}
+.buy_content .balance .balance_num{
+  color: #FF1D8D;
+  font-size: 28rpx;
+}
+.buy_btn{
+  height: 140rpx;
+  background-color: #FB7294;
+  text-align: center;
+  line-height: 140rpx;
+  color: white;
+  font-size: 36rpx;
+  margin-top: 35rpx;
+}
+.prompt{
+  color: white;
+  font-size: 36rpx;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%);
+}

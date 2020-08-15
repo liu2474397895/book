@@ -1,0 +1,12 @@
+<!--pages/reading/reading.wxml-->
+<!-- 这里是阅读界面 -->
+
+<view class="reding" bindtouchstart="touchStart" bindtouchmove="touchMove" bindtouchend="touchEnd">
+	<view class="content_title">章节10 详情</view>
+	<text class="content_text">
+	{{content}}
+	</text>
+	<view class="comments">
+		<text class="comments_tilte">个人介绍:</text><text class="comments_num">内幕(542)</text>
+	</view>
+</view>

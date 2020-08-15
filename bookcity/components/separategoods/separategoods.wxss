@@ -1,0 +1,56 @@
+/* components/separategoods/separategoods.wxss */
+ .shoping_list{
+  background-color: #2B323B;
+  display: flex;
+  margin: 0rpx 48rpx;
+  margin-top: 90rpx;
+  border-radius: 25rpx;
+}
+.shoping_list .shoping_list_img{
+  position: relative;
+  width: 170rpx;
+  height: 250rpx;
+  margin-left: 33rpx;
+  margin-right: 27rpx;
+  top: -33rpx;
+  z-index: 99;
+}
+.shoping_introduce{
+ padding-right: 25rpx;
+}
+.shoping_introduce .book_name{
+  font-size: 32rpx;
+  color: white;
+  padding-top: 25rpx;
+  padding-bottom: 10rpx;
+}
+.shoping_introduce .author {
+  padding-bottom: 15rpx;
+  width: 330rpx;
+  border-bottom: 1rpx solid #323943;
+}
+.shoping_introduce .author .author_text{
+  font-size: 28rpx;
+  color: #4B5164;
+  padding-right: 10rpx;
+}
+.shoping_introduce .author .author_name{
+  font-size: 28rpx;
+  color: #4B5164;
+}
+.shoping_introduce .price{
+  padding-top: 20rpx;
+}
+.shoping_introduce .price .price_text,.price_num{
+  font-size: 40rpx;
+  color: #FF1D8D;
+}
+.three_points{
+  color: #969BAF;
+  font-size: 50rpx;
+}
+.remove_text{
+  color: #969BAF;
+  font-size: 28rpx;
+  margin-top: 10rpx;
+}

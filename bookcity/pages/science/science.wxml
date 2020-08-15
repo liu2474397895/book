@@ -1,0 +1,17 @@
+<view class="main" hover-class="none">
+	<!-- 书籍 -->
+
+	<view class="science " wx:for="{{list2}}" vx:for-itema="item" wx:key="id">
+		<image class="science_img" src="{{item.src}}" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
+		<view class="science_right">
+			<view class="science_right_img">{{item.font}} <image class="" src="../../image/icon/dian.png" mode="scaleToFill"  binderror="" bindload="" />
+			  </view>
+			<view class="science_right_name">{{item.fonts}}</view>
+            <view class="science_right_size" selectable="false" space="false" decode="false"> {{item.font3}}</view>
+              
+		</view>
+
+
+	</view>
+
+</view>

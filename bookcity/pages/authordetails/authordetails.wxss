@@ -1,0 +1,142 @@
+/* pages/authordetails/authordetails.wxss */
+.custom{
+  color: #fff;
+  text-align: center;
+  padding-top: 65rpx;
+}
+.information_left image{
+  width: 240rpx;
+  height: 240rpx;
+  margin-right: 30rpx;
+}
+.content{
+  margin-top: 20rpx;
+}
+.information{
+  display: flex;
+  align-items: center;
+}
+.icon_one{
+  width: 20rpx;
+  height: 25rpx;
+  position: absolute;
+  top: 20rpx;
+  left: 25rpx;
+  z-index: 1;
+}
+.btn{
+  display: flex;
+  box-sizing: border-box;
+  position: relative;
+}
+.btn .share{
+  width: 180rpx;
+  height: 65rpx;
+  background-color: #21272e;
+  color: #9497ab;
+  margin-right: 20rpx;
+  border: 2px solid #545d66;
+  font-size: 28rpx;
+  line-height: 55rpx;
+  text-align: center;
+}
+.btn .share_two{
+  width: 180rpx;
+  height: 65rpx;
+  background-color: #478ce0;
+  color: #fff;
+  font-size: 28rpx;
+  line-height: 65rpx;
+}
+.name{
+  color: #fff;
+  font-size: 40rpx;
+  margin-bottom: 20rpx;
+}
+.address{
+  color: #b5b7c5;
+  font-size: 24rpx;
+}
+.personal{
+  border-bottom:1px solid #262a31 ;
+  padding: 30rpx;
+  margin-bottom: 50rpx;
+}
+.number{
+  color: #fff;
+  font-size: 36rpx;
+}
+.text{
+  color: #75808d;
+  margin-top: 20rpx;
+  font-size: 24rpx;
+}
+.like{
+  background-color: #2b323b;
+  border-radius: 20rpx;
+  padding: 30rpx 0;
+  display: flex;
+  margin-top: 50rpx;
+  margin-bottom: 70rpx;
+}
+.like_left{
+  padding-right: 66rpx;
+  padding-left: 65rpx;
+  border-right: 1px solid #363c45;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.ranking{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50rpx;
+}
+.ranking-left{
+  color: #ffffff;
+  font-size: 36rpx;
+}
+.ranking-right{
+  color: #396ba8;
+  font-size: 32rpx;
+}
+.bottom_left image{
+  width: 170rpx;
+  height: 250rpx;
+}
+.bottom_right{
+  margin-left: 30rpx;
+}
+.representative_work_bottom{
+  display: flex;
+  border-bottom: 1px solid #2b323b;
+  padding-bottom:45rpx ;
+  margin-bottom: 50rpx;
+}
+.stars{
+  width: 166rpx;
+  height: 29rpx;
+  margin-right: 25rpx;
+}
+.book_name{
+  color: #fff;
+  font-size: 40rpx;
+  margin-bottom: 20rpx;
+}
+.score{
+  color: #ffce44;
+}
+.margin{
+  margin-bottom: 20rpx;
+}
+.introduce{
+  color: #999fb0;
+  width: 450rpx;
+  font-size: 24rpx;
+  margin-bottom: 20rpx;
+}
+.readingvolume{
+  color: #478ce0;
+  font-size: 24rpx;
+}

@@ -1,0 +1,102 @@
+page{
+  background-color: #21272e;
+}
+.main {
+  background-color: #21272e;
+  padding-top: 40rpx;
+  padding: 0 37rpx 0rpx 30rpx;
+}
+.main .search {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  color: #8d92a5;
+  padding-bottom: 65rpx;
+}
+.main .search .icon1 {
+  width: 46rpx;
+  height: 46rpx;
+}
+.main .search .magnifier {
+  position: absolute;
+  top: 30rpx;
+  left: 30rpx;
+}
+.main .search .search_input {
+  width: 510rpx;
+  height: 97rpx;
+  background-color: #2d353d;
+  padding-left: 90rpx;
+  border-radius: 50rpx;
+}
+.search_hot {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  padding-bottom: 35rpx;
+}
+.search_hot image {
+  width: 40rpx;
+  height: 40rpx;
+}
+.search_hot .search_hot_all {
+  color: #8d92a5;
+  font-size: 25rpx;
+}
+.search_hot_books {
+  display: flex;
+  justify-content: space-between;
+  color: #8d92a5;
+  border-bottom: 1rpx solid #252930;
+  padding-bottom: 30rpx;
+}
+.search_hot_books image {
+  width: 194rpx;
+  height: 279rpx;
+  margin-bottom: 30rpx;
+}
+.search_hot_books view {
+  color: white;
+}
+.search_hot_books text {
+  color: #8d92a5;
+  font-size: 24rpx;
+}
+.mainbav {
+  width: 140vw;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1rpx solid #252930;
+}
+.mainbav view {
+  width: 130rpx;
+  color: white;
+  padding-bottom: 30rpx;
+  text-align: center;
+}
+.mainbav .mainbav_border {
+  border-bottom: 0rpx solid #fb6894;
+}
+.mainbav .cur {
+  border-bottom: 4rpx solid #fb6894;
+}
+.classification_search {
+  margin-top: 65rpx;
+}
+.classification_books {
+  padding-bottom: 80rpx;
+}
+.main .record {
+  display: flex;
+  flex-wrap: wrap;
+}
+.main .record view {
+  color: white;
+  background-color: #45485b;
+  padding: 15rpx 40rpx ;
+  margin-right: 20rpx;
+  font-size: 25rpx;
+  border-radius: 40rpx;
+  margin-bottom: 10rpx;
+}

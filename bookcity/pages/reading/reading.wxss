@@ -1,0 +1,32 @@
+/* pages/reading/reading.wxss */
+page{
+  background-color: #21272E;
+  width: 100%;
+  padding: 0rpx 40rpx;
+  box-sizing: border-box;
+}
+.content_title{
+   color: white;
+   font-size: 36rpx;
+}
+.content_text{
+  /* white-space: pre; */
+  color: rgb(180,181,189);
+  width: 100%;
+  text-align: justify;
+  /* text-indent:2erm; */
+  letter-spacing: 2rpx;
+  /* overflow-y: scroll; */
+}
+.comments{
+  padding: 50rpx 0rpx;
+}
+.comments .comments_tilte{
+  color: rgb(140, 141, 146);
+  font-size: 36rpx;
+  padding-right: 20rpx;
+}
+.comments .comments_num{
+  color: rgb(140, 141, 146);
+  font-size: 36rpx;
+}

@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "separategoods":"../../components/separategoods/separategoods"
+  },
+  "navigationBarBackgroundColor": "#21272E",
+  "navigationBarTitleText": "购物车",
+  "navigationBarTextStyle":"white"
+}

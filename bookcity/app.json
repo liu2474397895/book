@@ -1,0 +1,51 @@
+{
+
+  "pages":[
+    "pages/home/home",
+    "pages/author/author",
+    
+    "pages/authordetails/authordetails",
+ 
+    
+    "pages/explore/explore",
+    "pages/bookshelf/bookshelf",
+    "pages/my/my"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#21272e",
+    "navigationBarTitleText": "",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "backgroundColor": "#2a313a",
+    "list": [
+      {
+      "pagePath": "pages/home/home",
+      "text": "",
+      "iconPath": "image/home.png",
+      "selectedIconPath": "image/home_.png"
+    },
+    {
+      "pagePath": "pages/explore/explore",
+      "text": "",
+      "iconPath": "image/explore.png",
+      "selectedIconPath": "image/explore_.png"
+    },
+    {
+      "pagePath": "pages/bookshelf/bookshelf",
+      "text": "",
+      "iconPath": "image/book.png",
+      "selectedIconPath": "image/book_.png"
+    },
+    {
+      "pagePath": "pages/my/my",
+      "text": "",
+      "iconPath": "image/my.png",
+      "selectedIconPath": "image/my_.png"
+    }
+  ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "works":"../../components/works/works"
+  },
+  "navigationBarTitleText": "书架",
+  "navigationBarBackgroundColor": "#21272e"
+}

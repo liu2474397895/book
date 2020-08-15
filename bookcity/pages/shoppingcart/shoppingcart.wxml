@@ -1,0 +1,43 @@
+<!--pages/shoppingcart/shoppingcart.wxml-->
+<!-- 购物车页面 -->
+<!-- 购买的书籍 -->
+<scroll-view class="shop" scroll-y="true">
+	<view class="shoping" wx:for="{{book_list}}">
+	<!-- <view class="shoping_list" wx:for="{{book_list}}">
+		<image class="shoping_list_img" src="{{item.img}}"></image>
+		<view class="shoping_introduce">
+			<view class="book_name">{{item.book_name}}</view>
+			<view class="author">
+				<text class="author_text">作者:</text>
+				<text class="author_name">{{item.author_name}}</text>
+			</view>
+			<view class="price">
+				<text class="price_text">￥</text>
+				<text class="price_num">{{item.price}}</text>
+			</view>
+		</view>
+		<view class="remove">
+			<text class="three_points" bindtap="according">...</text>
+			<view class="remove_text" wx-if="{{!is_remove}}">移除</view>
+		</view>
+	</view> -->
+		<separategoods my-property="{{item}}" bind:myevent="onTap"></separategoods>
+	</view>
+</scroll-view>
+
+<!--购买-->
+<view class="buy" wx:if="{{book_list.length>0}}">
+	<view class="buy_content">
+		<view class="tota">
+			<text class="tota_text">总计(元)：</text>
+			<text class="tota_num">{{total_price}}</text>
+		</view>
+		<view class="balance">
+			<text class="balance_text">余额(元)：</text>
+			<text class="balance_num">{{balance}}.00</text>
+		</view>
+	</view>
+
+	<view class="buy_btn">购买</view>
+</view>
+<view class="prompt" wx:elif="{{book_list.length==0}}">购物车还没有商品欧！</view>

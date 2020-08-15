@@ -1,0 +1,122 @@
+/* pages/author/author.wxss */
+.custom{
+  color: #fff;
+  text-align: center;
+  padding-top: 65rpx;
+}
+.ranking_list{
+  margin-top: 20rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #343946;
+  padding-bottom: 30rpx;
+}
+.list_one{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 50rpx;
+}
+navigator{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.list_three{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.list_two{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 50rpx;
+}
+.list_three image{
+  width: 170rpx;
+  height: 220rpx;
+  margin-bottom: 15rpx;
+}
+.ranking_list{
+  display: flex;
+}
+.list_one image{
+  width: 170rpx;
+  height: 220rpx;
+  margin-bottom: 15rpx;
+}
+.list_two image{
+  width: 206rpx;
+  height:280rpx;
+  margin-bottom: 15rpx;
+}
+.text_name{
+  color: #f44380;
+  margin-bottom: 15rpx;
+}
+.text_fans{
+  color: #a2a8ba;
+}
+.top{
+  margin-top: 57rpx;
+}
+.ranking{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50rpx;
+}
+.ranking-left{
+  color: #ffffff;
+  font-size: 36rpx;
+}
+.ranking-right{
+  color: #a2a8ba;
+  font-size: 32rpx;
+}
+.classification_item{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 30rpx;
+}
+.classification_item image{
+  width: 160rpx;
+  height: 160rpx;
+  border-radius: 50%;
+}
+.bottom{
+  display: flex;
+  border-bottom: 1px solid #2f343c;
+  padding-bottom: 55rpx;
+}
+.bottom .text{
+  color: #fff;
+  margin-top: 20rpx;
+  padding-bottom: 10rpx;
+  font-size: 32rpx;
+}
+.classification_item .new {
+  width: 200rpx;
+  height: 245rpx;
+}
+
+.active{
+  background-color: #478ce0;
+  border: none
+}
+.border{
+  color: #fff;
+  border:1px solid #545d66;
+  font-size: 24rpx;
+  padding: 10rpx 30rpx;
+  text-align: center;
+  border-radius: 10rpx;
+}

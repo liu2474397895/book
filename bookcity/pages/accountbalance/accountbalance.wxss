@@ -1,0 +1,35 @@
+/* pages/accountbalance/accountbalance.wxss */
+page{
+  background-color: #21272E;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+.balance{
+  background-color: #2B323B;
+  margin: 0rpx 50rpx;
+  padding-top: 50rpx;
+  padding-left: 35rpx;
+  border-radius: 25rpx;
+}
+.balance .banlance_text{
+  color: #75808D;
+  font-size: 40rpx;
+  margin-bottom: 20rpx;
+  letter-spacing: 2rpx;
+}
+.balance .banlance_num{
+  color: white;
+  font-size: 120rpx;
+  margin-bottom: 45rpx;
+}
+.top_up{
+  height: 140rpx;
+  background-color: #FB7294;
+  text-align: center;
+  line-height: 140rpx;
+  color: white;
+  font-size: 36rpx;
+  margin-bottom: 35rpx;
+}

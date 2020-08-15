@@ -1,0 +1,118 @@
+/* pages/explore/explore.wxss */
+page {
+  background-color: #21272e;
+}
+
+.nav {
+  text-align: right;
+  padding: 0 45rpx;
+}
+
+.nav image {
+  width: 33rpx;
+  height: 33rpx;
+  margin-left: 20rpx;
+}
+
+.mian {
+  text-align: center;
+  margin-top: 90rpx;
+}
+
+.mian image {
+  width: 400rpx;
+  height: 580rpx;
+}
+.book{
+  width: 400rpx;
+  margin: 0 auto;
+}
+.the_author{
+  padding: 45rpx 0;
+}
+.the_author text{
+  display: inline-block;
+  margin: 25rpx 0;
+}
+.title{
+  color: #ffffff;
+  font-size: 36rpx;
+}
+.the_author_name{
+  color: #656a7b;
+  font-size: 28rpx;
+}
+/* 阅读人数 */
+.reading {
+  display: flex;
+  margin: 0 auto;
+  padding-top: 45rpx;
+  width: 400rpx;
+  justify-content: center;
+  border-top: 2rpx solid #2e3640;
+}
+
+.reading image {
+  width: 70rpx;
+  height: 70rpx;
+  margin: 0 10rpx;
+}
+.the_number_of{
+  margin-top: 30rpx;
+  font-size: 24rpx;
+  color: #a2a8ba;
+}
+/* 推荐人 */
+.recommended{
+  position: relative;
+}
+.referees{
+  display: flex;
+  align-items: center;
+  width: 240rpx;
+  background-color: #15191d;
+  border-radius: 50rpx 0rpx 0rpx 50rpx;
+  position: absolute;
+  right: 0rpx;
+  top: 70rpx;
+  padding:10rpx;
+  margin-bottom: 70rpx;
+}
+.referees image{
+  width: 70rpx;
+  height: 70rpx;
+  border-radius: 50%;
+  margin-right: 10rpx;
+  
+  
+}
+.the_name{
+  text-align: left;
+  color: #dedfdf;
+  font-size: 24rpx;
+}
+.the_name text:nth-child(3){
+  color: #707483;
+}
+/* 四块布局 */
+.mians{
+  margin-top: 90rpx;
+}
+.content{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.mians image{
+width: 270rpx;
+height: 400rpx;
+margin:0 15rpx;
+}
+.four_layout{
+  text-align: center;
+}
+.four_layout view{
+  color: #fff;
+  margin-top: 20rpx;
+  margin-bottom: 70rpx;
+}

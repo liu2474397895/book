@@ -1,0 +1,117 @@
+<view class="content">
+<view class="search">
+		<input class="search_input" placeholder="搜索..." catchfocus="inp_focus" bindblur="" bindconfirm="getRecth" /> <text class="hiddn" bindtap="inp_focusx">取消</text>
+		<image class="icon1 magnifier" mode="aspectFit|aspectFill|widthFix" src="../../image/icon/magnifier.png" bindload="" />
+	</view>
+		<view hidden="{{one}}">
+		<!-- 热门搜索 -->
+		<view class="search_hot">
+			<text class="" selectable="false" space="false" decode="false"> 热门搜索
+    </text>
+			<navigator class="search_hot_all" target="" >
+				查看全部 >
+			</navigator>
+
+
+		</view>
+		<!-- 书籍 -->
+		<view class="search_hot_books" hover-class="none">
+			<navigator url="" wx:for="{{list4}}" vx:for-item="item" wx:key="id">
+
+				<image class="" src="{{item.src}}" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
+				<view class="">{{item.font}}</view>
+				<text class="">{{item.fonts}}</text>
+
+			</navigator>
+
+		</view>
+		<!-- 搜索记录 -->
+		<view class="search_hot hot_record">
+			<text class="" selectable="false" space="false" decode="false"> 搜索历史
+    </text>
+			<image class="" src="../../image/icon/delete.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" bindtap="delete" />
+		</view>
+		<view class="record" id="record">
+			<block wx:for="{{arr2}}" vx:for-item="item" wx:key="id">
+				<view>{{item}}</view>
+			</block>
+		</view>
+
+
+	</view>
+		<view hidden="{{two}}">
+	<view class="classification">
+		<view class="top">
+			<view class="ranking">
+				<view class="ranking-left">分类排行</view>
+				<navigator url="../classification/classification">
+				<view class="ranking-right">查看全部 ></view>
+				</navigator>
+			</view>
+		</view>
+		<scroll-view scroll-x>
+			<view class="bottom">
+
+				<view class="classification_item" wx:for="{{list}}" wx:key="{{index}}">
+					<image src="{{item.image}}"></image>
+					<view class="text">{{item.text}}</view>
+				</view>
+
+
+			</view>
+		</scroll-view>
+
+
+	</view>
+	<view class="classification">
+		<view class="top">
+			<view class="ranking">
+				<view class="ranking-left">作者排行</view>
+				<navigator url="../author/author">
+					<view class="ranking-right">查看全部 ></view>
+				</navigator>
+			</view>
+		</view>
+		<scroll-view scroll-x>
+
+			<view class="bottom">
+
+				<view class="classification_item" wx:for="{{datas}}" wx:key="{{index}}">
+					<navigator url="../authordetails/authordetails?image={{item.image}}&text={{item.text}}">
+						<image src="{{item.image}}"></image>
+						<view class="text">{{item.text}}</view>
+					</navigator>
+				</view>
+
+
+			</view>
+
+
+		</scroll-view>
+
+
+	</view>
+	<view class="classification">
+		<view class="top">
+			<view class="ranking">
+				<view class="ranking-left">新发布</view>
+				<view class="ranking-right">查看全部 ></view>
+			</view>
+		</view>
+		<scroll-view scroll-x>
+			<view class="bottom">
+
+				<view class="classification_item" wx:for="{{arr}}" wx:key="{{index}}">
+					<image src="{{item.image}}" class="new"></image>
+					<view class="text">{{item.text}}</view>
+				</view>
+
+
+			</view>
+		</scroll-view>
+
+
+	</view>
+
+</view>
+</view>
